@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Specialized Budget</title>
+<link rel="icon" type="image/png" href="../imgs/favicon-16x16.png" />
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/BL.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="hamburger">
+  <div class="hamburgerbars" id="hamburgerbarfirst"></div>
+  <div class="hamburgerbars"></div>
+  <div class="hamburgerbars"></div>
+  </div>
+
+  <div class="ham-x" style="display: none;">
+  X
+  </div>
+
+
+
+  <div class="nav-menu hide" id="nav-dropdown" style="display: none;">
+    <div class="menu">
+      <ul>
+        <a href="../BudgetHome/Budgeting%20Home.html"><li class="nav-item" id="ed-home">Budgeting Home</li></a>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Transactions</li>
+        <li class="nav-item">Calendar</li>
+        <li class="nav-item">Budget</li>
+        <li class="nav-item">Pay</li>
+        <li class="nav-item">Rewards</li>
+        <li class="nav-item">Financial Snapshot</li>
+        <li class="nav-item">Accounts </li>
+        <li class="nav-item">Settings</li>
+      </ul>
+    </div>
+  </div>
+  <header>
+
+    LEARN: BUDGETING
+  </header>
+  <div class="content">
+    <div class="main">
+      <div id="no1">
+		<span id="prefer">Prefer article?</span>
+		<span id="back" style="display: none;">Prefer lesson?</span>
+      	<h2>Specialized Budgets</h2><p>You can have one comprehensive budget for your whole financial situation: Most of these lessons have described how to do that. You should also know that you can set up budgets for specific things. </p><p>For example, you can have a travel budget which can keep you spending smartly while on vacation. You can also have budgets for specific projects.</p><p>
+Capital budgets are used for keeping you on track to reach long-term objectives. For example, you may have a budget for education, which keeps track of how much you need to earn, though work or through investment earnings, to afford it. Retirement is another area in which capital budgets are used. 
+Learn more about saving and investing for education and retirement.
+</p>
+<div id="show"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px, height = 100px></div>
+<div id="no2" style="display:none;"><h2 class="quizheader">Quiz Time!</h2>
+  <form id="quiz" name="quiz">
+    <p class = "questions">What is a specialized budget?</p>
+    <input type = "radio" id = "mc" name = "question3" value = "Albany"> A budget that can be used for specific things or events, like trips<br><br>
+    <input type = "radio" id = "mc" name = "question3" value = "All Benny's"> A budget with fewer categories<br>
+    <input id = "button" type = "button" value = "Check" onclick = "check();">
+  </form>
+  <script>
+    function check(){
+
+  
+  var question3 = document.quiz.question3.value;
+  var correct = 0;
+
+
+  
+  if (question3 == "Albany") {
+    correct++;
+  }
+  
+  if (correct == 1) {
+  $(document).ready(function(){
+    $("#quiz1c").show();
+    $("#quiz1w").hide();
+  });
+  };
+  if (correct == 0) {
+  $(document).ready(function(){
+    $("#quiz1w").show();
+    $("#quiz1c").hide();
+  });
+  };
+}
+</script>
+<div id ="quiz1c" style="display: none;">That's correct!</div>
+<div id ="quiz1w" style="display: none;">That's incorrect! Try again</div>
+<div class="grid-container">
+  <div class="grid-item"><a href="Adjusting.html"><img src="../imgs/back.png" width=100% height=100%></a></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"><a href="C:\Users\Chris\Desktop\Education Prototype\BudgetHome\Budgeting Home.html"><img src="../imgs/forward.png" width=100% height=100%></a></div>  
+</div>
+</div>
+
+
+    </div>
+  </div>
+
+<footer>
+<div style="width: 100%">
+</div>
+</footer>
+
+</div>
+</body>
+</html>

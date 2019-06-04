@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adjusting Your Budget</title>
+<link rel="icon" type="image/png" href="../imgs/favicon-16x16.png" />
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/BL.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="hamburger">
+  <div class="hamburgerbars" id="hamburgerbarfirst"></div>
+  <div class="hamburgerbars"></div>
+  <div class="hamburgerbars"></div>
+  </div>
+
+  <div class="ham-x" style="display: none;">
+  X
+  </div>
+
+
+
+  <div class="nav-menu hide" id="nav-dropdown" style="display: none;">
+    <div class="menu">
+      <ul>
+        <a href="../BudgetHome/Budgeting%20Home.html"><li class="nav-item" id="ed-home">Budgeting Home</li></a>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Transactions</li>
+        <li class="nav-item">Calendar</li>
+        <li class="nav-item">Budget</li>
+        <li class="nav-item">Pay</li>
+        <li class="nav-item">Rewards</li>
+        <li class="nav-item">Financial Snapshot</li>
+        <li class="nav-item">Accounts </li>
+        <li class="nav-item">Settings</li>
+      </ul>
+    </div>
+  </div>
+  <header>
+
+    LEARN: BUDGETING
+  </header>
+  <div class="content">
+    <div class="main">
+      <div id="no1">
+        <span id="prefer">Prefer article?</span>
+        <span id="back" style="display: none;">Prefer lesson?</span>
+        <h2>Compare Actual to Budgeted</h2>
+<p>After each period, you need to compare your budget to your actual spending for the period. More than likely, your actual spending will not line up with your budgeted amount. Once your first budget period is over, you should go back to see how well you did in meeting your budget goals.</p>
+<p>In some categories, you may have overspent in some categories, while in others you may have underspent.</p>
+<!--[GRAPHIC?]-->
+<p>In addition, you may have received more income than expected (a favorable thing), or received less (unfavorable). If you’re income is unpredictable and varies by a large amount each period, you experience income volatility (don’t worry too much, there are things you can do to help with that!)</p>
+
+
+        <div id="show"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div>
+
+
+      <div id="no2" style="display: none;"><h2>Decide How to Adjust</h2>
+<p>Once you know how your actual spending compares to your budgeted amounts, you should think about whether your budgeted amounts are appropriate to your current financial situation. If they are, then you should work to keep your spending in that range for the next period. If not, adjust your budget to your needs and goals.</p>
+<p>For example, if you budgeted $150 for electricity each month but only spent $110 in the last, it may make sense to adjust the budget to a lower amount for the future, especially if you believe your last month’s electric consumption is typical of your electric consumption. </p>
+<p>In contrast, if you spent $200 on entertainment when you budgeted only $100, you should probably examine your spending habits a little more closely. It may be that you think $200 per month is better to spend on entertainment than $100, but you need to find other areas of spending to cut back on. </p>
+<p>There are ways to help you stay within your budgeted amounts, such as setting up notifications for when you near your spending limit, putting aside the amount you budget in cash in an envelope and only paying out of that (aka the envelope method), you adding all transactions manually. </p>
+
+        <div id="show2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div><div id="break3"></div>
+
+
+<div id="no3"><h2 class="quizheader">Quiz Time!</h2>
+  <form id="quiz" name="quiz">
+    <p class = "questions">When should you definitely not take on debt?</p>
+    <input type = "radio" id = "mc" name = "question1" value = "First"> To finance purchases of consummable goods<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Second"> To invest in things such as education<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Third"> To finance a home purchase<br>
+    <input id = "button" type = "button" value = "Check" onclick = "check();">
+  </form>
+  <script>
+    function check(){
+
+  
+  var question1 = document.quiz.question1.value;
+  var correct = 0;
+
+
+  
+  if (question1 == "First") {
+    correct++;
+  }
+  
+  if (correct == 1) {
+  $(document).ready(function(){
+    $("#quiz1c").show();
+    $("#quiz1w").hide();
+  });
+  };
+  if (correct == 0) {
+  $(document).ready(function(){
+    $("#quiz1w").show();
+    $("#quiz1c").hide();
+  });
+  };
+}
+</script>
+<div id ="quiz1c" style="display: none;">That's correct! You should never take on debt to finance consummable things (like food and entertainment).</div>
+<div id ="quiz1w" style="display: none;">That's incorrect! Try again</div>
+<div class="grid-container">
+  <div class="grid-item"><a href="Controlling.html"><img src="../imgs/back.png" width=100% height=100%></a></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"><a href="Specialized.html"><img src="../imgs/forward.png" width=100% height=100%></a></div>  
+</div>
+</div></div></div></div>
+
+
+    </div>
+  </div>
+
+<footer>
+<div style="width: 100%">
+</div>
+</footer>
+
+</div>
+</body>
+</html>

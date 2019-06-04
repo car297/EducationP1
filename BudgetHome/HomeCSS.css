@@ -1,0 +1,78 @@
+p {
+	font-family: arial;
+}
+
+/*.lesson {
+	background-color: rgb(78 277 28);
+	border: 2px solid grey;
+	width: 200px;
+    height: 200px;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	display: inline-block;
+	color: white;
+	font-family: "Segoe UI";
+}
+*/
+
+.total {
+	display: inline-grid;
+	grid-gap: 4.5% 25%;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	padding-left: 35%;
+	padding-right: 35%;  
+}
+
+.circle-text {
+    width: 130%;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: rgb(30 199 55); 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circle-text div {
+    float: left;
+    width: 100%;
+    padding-top: 50%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: white;
+	font-family: "Segoe UI";
+	font-weight: bold;
+
+
+}
+
+h1 {
+	font-family: 'Segoe UI';
+	color: rgb(30 199 55);
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.item1{
+	grid-row-start: 1;
+  	grid-row-end: 3;
+}
+
+body {
+	background-image: url("https://static.ucraft.app/fs/userFiles/liquify/images/79-pElSkGRA2NU.jpg");
+	background-position: 50% 50%;
+}
