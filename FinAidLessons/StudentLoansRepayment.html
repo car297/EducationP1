@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Loans: Repayment</title>
+<link rel="icon" type="image/png" href="../imgs/favicon-16x16.png" />
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/BL.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="hamburger">
+  <div class="hamburgerbars" id="hamburgerbarfirst"></div>
+  <div class="hamburgerbars"></div>
+  <div class="hamburgerbars"></div>
+  </div>
+
+  <div class="ham-x" style="display: none;">
+  X
+  </div>
+
+
+
+  <div class="nav-menu hide" id="nav-dropdown" style="display: none;">
+    <div class="menu">
+      <ul>
+        <a href="../FinAidHome/FinAidHome.html"><li class="nav-item" id="ed-home">Financial Aid Home</li></a>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Transactions</li>
+        <li class="nav-item">Calendar</li>
+        <li class="nav-item">Budget</li>
+        <li class="nav-item">Pay</li>
+        <li class="nav-item">Rewards</li>
+        <li class="nav-item">Financial Snapshot</li>
+        <li class="nav-item">Accounts </li>
+        <li class="nav-item">Settings</li>
+      </ul>
+    </div>
+  </div>
+  <header>
+
+    LEARN: FINANCIAL AID AND STUDENT LOANS
+  </header>
+  <div class="content">
+    <div class="main">
+      <div id="no1">
+        <span id="prefer">Prefer article?</span>
+        <span id="back" style="display: none;">Prefer lesson?</span>
+        <h2>Repaying Your Student Loans</h2>
+        <p>Now that you finished your education (hopefully!), it’s time to begin repaying any loans you took out during that time. For student loans there are different types of repayment plans (check with your student loan servicer to see which they provide). Here are a summary of some of them:</p>
+
+        <div id="show"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div>
+
+
+      <div id="no2" style="display: none;"><h2>Repayment Plans</h2>
+        <ul>
+<li>Standard Repayment Plan: This works for all government direct loans. You pay a fixed amount each month for 10 years, after which the loan is paid off. You can pay back more than the minimum to pay off the loan faster.</li>
+<li>Graduated Repayment Plan: This plan may work if you expect your income to rise over time. Repayments start off low and rise over time, generally every two years.</li>
+<li>Extended Repayment Plan: With this plan you have 25 years to pay off your loans, and the payments can be fixed or graduated. While the payments you pay are lower, this plan does increase the total amount of interest you pay. There is also a minimum amount you must have borrowed to qualify for this plan, currently set at $30,000.</li>
+<li>Income-Based Repayment Plan: These plans only are allowed if the borrower faces a certain amount of financial hardship. It sets an upper limit of what each monthly payment can be, and if the user satisfactorily makes progress over 25 years, the remaining balance will be canceled.</li>
+<li>Pay-as-you-earn repayment plans: These are essentially the same as Income-Based Repayment Plans, but they are only for federal direct loans and are canceled after 20 years of satisfactory progress rather than 25.</li>
+<li>Income-Contingent Repayment Plan: This is for direct subsidized and unsubsidized borrowers only. Some qualify for this plan even if they do not for the income-based repayment plan. Monthly payments undergo adjustment each year based on income, family size, and the total amount of direct loans. Borrowers under this repayment plan have 25 years to pay off their debt.</li></ul>
+
+        <div id="show2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div><div id="break3"></div>
+
+     
+
+<div id="no3"><h2 class="quizheader">Quiz Time!</h2>
+  <form id="quiz" name="quiz">
+    <p class = "questions">Which repayment plan usually leads to the lowest amount you will pay over the life of the loan.</p>
+    <input type = "radio" id = "mc" name = "question1" value = "First"> Standard<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Second"> Graduated<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Third"> Extended<br>
+    <input id = "button" type = "button" value = "Check" onclick = "check();">
+  </form>
+  <script>
+    function check(){
+
+  
+  var question1 = document.quiz.question1.value;
+  var correct = 0;
+
+
+  
+  if (question1 == "First") {
+    correct++;
+  }
+  
+  if (correct == 1) {
+  $(document).ready(function(){
+    $("#quiz1c").show();
+    $("#quiz1w").hide();
+  });
+  };
+  if (correct == 0) {
+  $(document).ready(function(){
+    $("#quiz1w").show();
+    $("#quiz1c").hide();
+  });
+  };
+}
+</script>
+<div id ="quiz1c" style="display: none;">That's correct! Your monthly payments are larger with the standard, but you pay it off sooner. Income-based plans may have lower payments and lower total repayment, but not all are eligible.</div>
+<div id ="quiz1w" style="display: none;">That's incorrect! Try again</div>
+<div class="grid-container">
+  <div class="grid-item"><a href="Types.html"><img src="../imgs/back.png" width=100% height=100%></a></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"><a href="StudentLoanRelief.html"><img src="../imgs/forward.png" width=100% height=100%></a></div>  
+</div>
+</div></div></div></div>
+
+
+    </div>
+  </div>
+
+<footer>
+<div style="width: 100%">
+</div>
+</footer>
+
+</div>
+</body>
+</html>

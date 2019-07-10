@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Applying for Financial Aid</title>
+<link rel="icon" type="image/png" href="../imgs/favicon-16x16.png" />
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/BL.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="hamburger">
+  <div class="hamburgerbars" id="hamburgerbarfirst"></div>
+  <div class="hamburgerbars"></div>
+  <div class="hamburgerbars"></div>
+  </div>
+
+  <div class="ham-x" style="display: none;">
+  X
+  </div>
+
+
+
+  <div class="nav-menu hide" id="nav-dropdown" style="display: none;">
+    <div class="menu">
+      <ul>
+        <a href="../FinAidHome/FinAidHome.html"><li class="nav-item" id="ed-home">Financial Aid Home</li></a>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Transactions</li>
+        <li class="nav-item">Calendar</li>
+        <li class="nav-item">Budget</li>
+        <li class="nav-item">Pay</li>
+        <li class="nav-item">Rewards</li>
+        <li class="nav-item">Financial Snapshot</li>
+        <li class="nav-item">Accounts </li>
+        <li class="nav-item">Settings</li>
+      </ul>
+    </div>
+  </div>
+  <header>
+
+    LEARN: FINANCIAL AID
+  </header>
+  <div class="content">
+    <div class="main">
+      <div id="no1">
+        <span id="prefer">Prefer article?</span>
+        <span id="back" style="display: none;">Prefer lesson?</span>
+        <h2>Applying for Financial Aid</h2>
+        <p>All but the very richest should apply for financial aid. Even if you don’t think you’ll get any, you may be pleasantly surprised! In the United States, applying for financial aid usually begins with filling out the FAFSA (short for the Free Application for Federal Student Aid). The FAFSA is a form created by the US government that asks a series of questions to find out how much financial aid does the student need (unfortunately, often times what you feel you need and what financial aid officers think you need are two different things). </p>
+
+          <p>Usually both you and your family will be expected to contribute to your education, with the expected family contribution (EFC) how much your parents or guardians must contribute, and the expected student contribution (ESC) how much you will be expected to contribute (usually schools expect this to be met through summer employment. Work-study awards are counted towards your financial aid award itself).</p>
+
+        <div id="show"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div>
+
+
+      <div id="no2" style="display: none;"><h2>Necessary Forms</h2>
+        <p>Factors asked about on the FAFSA include your income, your assets, and your parents’ or guardians’ income and assets (if you are a dependent of them). To fill out the FAFSA, you will need your and your parents W2s (which are forms provided by employers to keep track of how much money an employee has made in a year), bank statements (which keep track of how much you have in your bank account), social security numbers (or resident ID numbers if you are not an American citizen), as well as any other records that you may need to answer its questions.</p>
+<p>Signing the FAFSA can be laborious in trying to create the FAFSA ID. If you are a dependent, you need to have that person create a FAFSA ID and sign it to. Especially if you live away from your parents or guardian, try to fill out the FAFSA ahead of the deadline to prevent stressful calls to create or retrieve a FAFSA ID.</p>
+
+        <div id="show2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide2"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div><div id="break3"></div>
+
+      <div id="no3">
+        <p>Even more laborious and tedious is the CSS-Profile form by the College Board. Fortunately, relatively few schools require it. Most schools that require it are private, elite, and expensive. It should be noted that these schools also provide the best financial aid, so applying to schools that require the CSS-Profile may yield an actual lower cost of attendance.</p>
+<p>The CSS-Profile asks for information about parents’ retirement funds, home ownership, businesses owned, etc. This form requires more time to fill out than the FAFSA and also carries a fee for its submission. This form should be completed well in advance of any deadline. In addition, many schools using this form require verification documents (e.g. W2s, tax returns, signature documents) to be submitted to College Board (a program called IDOC). Gathering these documents ahead of time is important to prevent penalties to, or even denials of, financial aid awards.</p>
+
+        <div id="show3"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+        <div id="hide3"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\hide.jpg" width = 100px height=100px></div>
+
+
+      <div id="no4"><h2></h2>
+<p>Once you get a financial aid award, you may be disappointed that it is not for a greater amount. You can appeal their decision. Usually this involves a written explanation as to why you need greater aid, along with the provision of supporting documents. Note that some reasons, such as high credit card debt, are usually not reasons accepted by financial aid offices for greater awards.</p>
+
+
+
+<div id="show4"><img src="C:\Users\Chris\Desktop\Education Prototype\imgs\DownArrow.png" width= 100px height = 100px></div>
+<div id="no5"><h2 class="quizheader">Quiz Time!</h2>
+  <form id="quiz" name="quiz">
+    <p class = "questions">Which is not usually taken into account when a school determines financial aid?</p>
+    <input type = "radio" id = "mc" name = "question1" value = "First"> Student's assets<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Second"> Parent's salary<br><br>
+    <input type = "radio" id = "mc" name = "question1" value = "Third"> Student's longterm future earnings potential<br>
+    <!--<input type = "radio" id = "mc" name = "question1" value = "Fourth"> Parent's salary<br>-->
+    <input id = "button" type = "button" value = "Check" onclick = "check();">
+  </form>
+  <script>
+    function check(){
+
+  
+  var question1 = document.quiz.question1.value;
+  var correct = 0;
+
+
+  
+  if (question1 == "Third") {
+    correct++;
+  }
+  
+  if (correct == 1) {
+  $(document).ready(function(){
+    $("#quiz1c").show();
+    $("#quiz1w").hide();
+  });
+  };
+  if (correct == 0) {
+  $(document).ready(function(){
+    $("#quiz1w").show();
+    $("#quiz1c").hide();
+  });
+  };
+}
+</script>
+<div id ="quiz1c" style="display: none;">That's correct! Schools do not base financial aid awards off what they they think you may earn years later. Financial aid awards are based primarily on the assets and income of the student and guardian.</div>
+<div id ="quiz1w" style="display: none;">That's incorrect! Try again</div>
+<div class="grid-container">
+  <div class="grid-item"><a href="Intro.html"><img src="../imgs/back.png" width=100% height=100%></a></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"><a href="Types.html"><img src="../imgs/forward.png" width=100% height=100%></a></div>  
+</div>
+</div></div></div></div>
+
+
+    </div>
+  </div>
+
+<footer>
+<div style="width: 100%">
+</div>
+</footer>
+
+</div>
+</body>
+</html>
