@@ -1,0 +1,21 @@
+Key for Markdown version of Educational Features
+
+### ###: Page Title
+
+#: Heading
+
+*: Unordered list item
+
+**: List item within list item
+
+Option x: Option for quiz question with x as the order
+
+[Correct]: Signifies which option is the correct answer to the quiz questions
+
+If correct: Signifies output to display to user if they choose correct answer
+
+##: Header for use within content (i.e. not the first header displayed when a new section is revealed)
+
+# [Arrow]: No header displayed, but signifies that the following text should be its own section; source: https://raw.githubusercontent.com/car297/EducationP1/master/imgs/DownArrow.png
+
+!(): Image, URL and alt-text in parenthesis
